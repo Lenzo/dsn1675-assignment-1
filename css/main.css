@@ -4,12 +4,21 @@ html {
 
 *, *::before, *::after {
 	box-sizing: inherit;
+	
+	font-family: 'Playfair Display', serif;
+}
+
+img{
+	max-width: 100%;
 }
 
 body{
 	margin: 0;
 	padding: 0;
 }
+
+/*------------------- HEADER BEGINS---------------------------------*/
+
 
 header{
 	background-color: rebeccapurple;
@@ -30,10 +39,11 @@ h1{
 	font-size: 1rem;
 	padding: 1rem;
 	float: left;
+	font-size: 1rem;
 }
 
 nav{
-	background-color: rgb(184,8,255);
+
 	width: 100%;
 }
 
@@ -46,12 +56,10 @@ nav ol li{
 	padding: 1rem;
 	display: inline-block;
 	width: 25%;
-	border-right: 1px solid rebeccapurple;
-	border-left: 1px solid rebeccapurple;
 	text-align: center;
 	font-size: 1rem;
 	height: 100%;
-	font-weight: bold;
+	font-weight: 300;
 }
 
 nav ol li a{
@@ -59,3 +67,34 @@ nav ol li a{
 	height: 100%;
 	text-decoration: none;
 }
+
+.banner{
+	height: 15rem;
+	background-image: url("../images/banner.jpg");
+}
+
+/*----------------------- NOW PLAYING BEGINS ---------------------------- */
+
+#now-playing{
+		height: 15rem;
+		background-image: url("../images/atlantis.jpg");
+}
+
+/*------------------------- FOOTER BEGINS -------------------------------  */
+
+footer{
+	background-color: rebeccapurple;
+}
+
+footer nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+footer nav ul li{
+	font-size: .5rem;
+}
+
+/* FOOTER ENDS  */
+
+
