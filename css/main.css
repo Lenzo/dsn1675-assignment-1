@@ -42,7 +42,6 @@ h3{
 	font-style: 'Playfair Display';
 	padding: 0 2rem;
 	margin: 0;
-	border-left: 3px solid seagreen;
 }
 /*------------------- HEADER BEGINS---------------------------------*/
 
@@ -134,6 +133,7 @@ strong{
 
 #seven-wonders {
 	padding: 1rem;
+	background-color: alicewhite;
 
 }
 
@@ -146,9 +146,6 @@ strong{
 #seven-wonders li{
 	padding: 1rem;
 	margin-bottom: 1rem;
-	border-bottom: 3px solid seagreen;
-
-
 }
 
 figure img{
@@ -158,6 +155,7 @@ figure img{
 figure{
 		padding: 0;
 		margin: 0;
+		border: 3px solid seagreen;
 }
 
 dl{
@@ -168,9 +166,6 @@ dl{
 dt{
 	margin: 0;
 	display: inline-block;
-
-
-
 }
 
 dd{
@@ -180,10 +175,9 @@ dd{
 }
 
 #seven-wonders div{
-	background-color: MediumAquaMarine;
+	background-color: seagreen;
 	padding: .5rem 1rem;
 	text-align: center;
-	
 	margin-bottom: 1rem;
 }
 
@@ -194,7 +188,7 @@ dd{
 #seven-wonders div p{
 	width: 100%;
 	height: 100%;
-	color: seagreen;
+	color: white;
 	text-decoration: none;
 	margin: 0;
 	font-size: 2em;
@@ -204,8 +198,99 @@ dd{
 /*----------------------- SEVEN WONDERS ENDS ---------------------------- */
 
 
-/*----------------------- NOW PLAYING BEGINS ---------------------------- */
-/*----------------------- NOW PLAYING ENDS ------------------------------ */
+
+
+/*----------------------- BUY TICKETS BEGINS ---------------------------- */
+
+#buy-tickets{
+	background-color: powderblue;
+	border-top: 3rem solid rebeccapurple;
+	border-bottom: 3rem solid rebeccapurple;
+	padding: 1rem;
+}
+
+#buy-tickets strong{
+	display: block;
+}
+
+#buy-tickets h2{
+	color: rebeccapurple;
+	border-left: 1rem solid rebeccapurple;
+}
+
+#buy-tickets h3{
+	color: rebeccapurple;
+	border-left: 3px solid rebeccapurple;
+}
+
+#buy-tickets p{
+	color: rebeccapurple;
+}
+
+#buy-tickets a p{
+	background-color: rebeccapurple;
+	width: 40%;
+	display: inline-block;
+	padding: 1rem;
+	margin: 1rem;
+	color: white;
+	text-align: center;
+
+}
+/*----------------------- BUY TICKETS ENDS ---------------------------- */
+
+
+/*----------------------- NOW PLAYING ENDS ---------------------------- */
+	
+#now-playing{
+	border-top: 3rem solid palegreen;
+	border-bottom: 3rem solid palegreen;
+	background-color: darkblue;
+	overflow: hidden;
+}
+
+#now-playing img{
+	position: static;
+	border: 5px solid palegreen;
+}
+
+.atlantis-text{
+	position: relative;
+	bottom: 15rem;
+	text-align: center;
+	color: white;
+}
+
+
+#now-playing h2{
+	color: white;
+	border-left: 1rem solid palegreen;
+	text-shadow: 2px 2px 6px #555;
+	color: palegreen;
+}
+
+#now-playing i{
+	font-size: 4rem;
+}
+
+
+.atlantis-text{
+	position: absolute;
+	bottom: 15rem;
+	text-align: center;
+	color: white;
+}
+
+#now-playing h3{
+	color: white;
+	text-shadow: 2px 2px 6px #555;
+}
+
+#now-playing i{
+	font-size: 4rem;
+}
+
+/*----------------------- NOW PLAYING ENDS ---------------------------- */
 
 
 /*------------------------- FOOTER BEGINS -------------------------------  */
