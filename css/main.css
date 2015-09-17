@@ -19,9 +19,9 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Playfair Display', serif;
-	background-color: whitesmoke;
-
+	background-color: smokewhite;
 }
+
 
 a{
 	color: limegreen;
@@ -72,6 +72,7 @@ h1{
 
 nav{
 	width: 100%;
+	background-color: rebeccapurple;
 }
 
 nav ol{
@@ -83,7 +84,6 @@ nav ol li{
 	
 	float: right;
 	display: inline-block;
-	max-width: 20%;
 	text-align: left;
 	font-size: 1rem;
 	font-weight: 300;
@@ -93,6 +93,7 @@ nav ol li{
 	color: rebeccapurple;
 	margin-right: 1rem;
 	font-weight: 700;
+	width: 20%;
 
 }
 
@@ -133,8 +134,7 @@ strong{
 
 #seven-wonders {
 	padding: 1rem;
-	background-color: alicewhite;
-
+	background-color: smokewhite;
 }
 
 #seven-wonders ol{
@@ -207,6 +207,7 @@ dd{
 	border-top: 3rem solid rebeccapurple;
 	border-bottom: 3rem solid rebeccapurple;
 	padding: 1rem;
+	text-align: center;
 }
 
 #buy-tickets strong{
@@ -216,11 +217,14 @@ dd{
 #buy-tickets h2{
 	color: rebeccapurple;
 	border-left: 1rem solid rebeccapurple;
+	text-align: left;
 }
 
 #buy-tickets h3{
 	color: rebeccapurple;
 	border-left: 3px solid rebeccapurple;
+	text-align: left;
+	margin-top: 1rem;
 }
 
 #buy-tickets p{
@@ -239,8 +243,7 @@ dd{
 }
 /*----------------------- BUY TICKETS ENDS ---------------------------- */
 
-
-/*----------------------- NOW PLAYING ENDS ---------------------------- */
+/*----------------------- NOW PLAYING BEGINS ---------------------------- */
 	
 #now-playing{
 	border-top: 3rem solid seagreen;
@@ -259,7 +262,7 @@ dd{
 	text-align: center;
 	color: white;
 	position: absolute;
-	top: 15rem;
+	top: 55%;
 	left: 10%;	
 	right: 10%;
 }
@@ -298,11 +301,68 @@ dd{
 
 /*----------------------- NOW PLAYING ENDS ---------------------------- */
 
+/*----------------------- THIS WEEK BEGINS ---------------------------- */
+
+#this-week{
+	background-color: smokewhite;
+	border-top: 3rem solid powderblue;
+	border-bottom: 3rem solid powderblue;
+	padding: 1rem;
+}
+
+#this-week h3{
+	color: rebeccapurple;
+	padding: 0;
+	margin-top: 1rem;
+}
+
+#this-week ol{
+	list-style-type: none;
+	padding: 0;
+}
+
+#this-week ul{
+	list-style-type: decimal;
+}
+
+#this-week h2{
+	color: rebeccapurple;
+	border-left: 1rem solid rebeccapurple;
+}
+
+#this-week ul li{
+	margin-left: 3rem;
+}
+
+/*----------------------- THIS WEEK ENDS ---------------------------- */
 
 /*------------------------- FOOTER BEGINS -------------------------------  */
 
+
+aside{
+	margin-bottom: 1rem;
+}
+
 footer{
 	background-color: rebeccapurple;
+	padding: 2rem;
+}
+
+footer a p{
+	color: palegreen;
+}
+
+.contact a{
+	display: block;
+}
+
+footer a{
+	text-decoration: none;
+	color: palegreen;
+}
+
+footer nav{
+	line-height: 1rem;
 }
 
 footer nav ul{
@@ -312,6 +372,8 @@ footer nav ul{
 
 footer nav ul li{
 	font-size: .5rem;
+	color: palegreen;
+	text-decoration: underline;
 }
 
 /* FOOTER ENDS  */
