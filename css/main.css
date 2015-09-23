@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
 	box-sizing: border-box;
 }
@@ -287,10 +293,11 @@ dd{
 }
 
 #now-playing img{
-	border: 5px solid seagreen;
 	margin-bottom: 1rem;
 }
 
+
+/*
 .atlantis-text{
 	text-align: center;
 	color: white;
@@ -301,11 +308,18 @@ dd{
 }
 
 
+
 #now-playing h3{
 	color: white;
 	text-shadow: 2px 2px 6px #555;
 	line-height: 1rem;
 	font-size: .7rem;
+}
+
+*/
+
+.atlantis-text p{
+	color: seagreen;
 }
 
 #now-playing i{
