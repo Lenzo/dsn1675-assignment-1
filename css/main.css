@@ -55,6 +55,7 @@ h3{
 	background-color: rebeccapurple;
 	width: 100%;
 	overflow: hidden;
+
 }
 
 .header img{
@@ -88,6 +89,7 @@ h1{
 .header div{
 	background-color: seagreen;
 	width: 20%;
+	min-width: 5rem;
 	float: right;
 	padding: .2rem;
 	margin: 1rem;
@@ -98,7 +100,7 @@ h1{
 
 nav{
 	width: 100%;
-	background-color: white;
+	margin: .1rem 0 .15rem 0;
 }
 
 nav ol{
@@ -184,7 +186,7 @@ strong{
 
 figure img{
 	width: 100%;
-			border: 3px solid seagreen;
+	border: 3px solid seagreen;
 
 }
 
@@ -261,13 +263,13 @@ dd{
 #buy-tickets h3{
 	color: rebeccapurple;
 	border-left: 3px solid rebeccapurple;
-	text-align: left;
+	text-align: center;
 	margin-top: 1rem;
 }
 
 #buy-tickets p{
 	color: rebeccapurple;
-	text-align: left;
+	text-align: center;
 }
 
 #buy-tickets a p{
@@ -436,26 +438,52 @@ footer nav ul li{
 /* FOOTER ENDS  */
 
 
+
+
+
+
+
+/* 480 px */
+
 @media only screen and (min-width: 30em){
 
 	nav ol li{
 		display: inline-block;
-		width: 25%;
 		font-size: .5rem;
-	}
-
-	nav{
-		width: 100%;
+		width: 25%;
+		padding: .5rem 0 .5rem 0;
 	}
 
 	nav ol li a{
 		font-size: 1rem;
 	}
 
+	#buy-tickets p{
+		width: 35rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 
+/* 700 px */
 
+@media only screen and (min-width: 43em) {
 
+	
+	 #seven-wonders li{
+		width: 44%;
+		display: inline-block;
+		margin: 1rem;
+	}
 
+	#seven-wonders ol li:last-child{
+		width: 100%;
+		padding-right: 2.5rem;
+	}
+
+	#seven-wonders ol li div a p{
+		font-size: .9rem;
+	}
 
 }
