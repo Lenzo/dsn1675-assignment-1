@@ -436,3 +436,26 @@ footer nav ul li{
 /* FOOTER ENDS  */
 
 
+@media only screen and (min-width: 30em){
+
+	nav ol li{
+		display: inline-block;
+		width: 25%;
+		font-size: .5rem;
+	}
+
+	nav{
+		width: 100%;
+	}
+
+	nav ol li a{
+		font-size: 1rem;
+	}
+
+
+
+
+
+
+
+}
