@@ -6,6 +6,8 @@
 
 html {
 	box-sizing: border-box;
+	font-size: 100%;
+	line-height: 1.3rem;
 }
 
 *, *::before, *::after {
@@ -15,7 +17,7 @@ html {
 }
 
 img{
-	max-width: 100%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -39,6 +41,7 @@ h2{
 	padding: 0 2rem;
 	border-left: 1rem solid seagreen;
 	width: 100%;
+	line-height: 3rem;
 }
 
 h3{
@@ -47,6 +50,11 @@ h3{
 	font-style: 'Playfair Display';
 	padding: 0 .5rem;
 	margin: 0;
+}
+
+.wrapper{
+	max-width: 40em;
+	margin: 0 auto;
 }
 /*------------------- HEADER BEGINS---------------------------------*/
 
@@ -159,11 +167,16 @@ p{
 	color: white;
 }
 
+li strong{
+	line-height: 1.5rem;
+}
+
 strong{
 	font-weight: 900;
 	font-style: italic;
 	font-size: 3em;
 	color: white;
+	line-height: 3rem;
 }
 
 /*----------------------- SEVEN WONDERS BEGINS ---------------------------- */
@@ -262,14 +275,17 @@ dd{
 
 #buy-tickets h3{
 	color: rebeccapurple;
-	border-left: 3px solid rebeccapurple;
-	text-align: center;
+	border-left: 1rem solid rebeccapurple;
+	text-align: left;
+	font-size: 2rem;
 	margin-top: 1rem;
+	padding-left: 2rem;
+	line-height: 2rem;
 }
 
 #buy-tickets p{
 	color: rebeccapurple;
-	text-align: center;
+	text-align: left;
 }
 
 #buy-tickets a p{
@@ -280,7 +296,13 @@ dd{
 	margin: 1rem 0;
 	color: white;
 	text-align: center;
+}
 
+#buy-tickets strong{
+	font-weight: 900;
+	font-style: italic;
+	font-size: 2em;
+	color: white;
 }
 /*----------------------- BUY TICKETS ENDS ---------------------------- */
 
@@ -300,6 +322,7 @@ dd{
 }
 
 #now-playing h2{
+	max-width: 40rem;
 	margin-left: 1rem;
 }
 
@@ -309,17 +332,15 @@ dd{
 	text-align: center;
 }
 
-.atlantis-text .button{
-	color: white;
-	text-align: center;
-	width: 75%;
-	margin: 0 auto 1rem auto;
-
-}
 
 .atlantis-text p{
-	color: seagreen;
+	color: white;
 }
+
+
+
+
+
 
 #now-playing i{
 	font-size: 2rem;
@@ -329,9 +350,10 @@ dd{
 	background-color: seagreen;
 	padding: .4rem;
 	text-align: center;
-	font-size: .5rem;
-	margin-bottom: 1rem;
+	font-size: 1rem;
+	margin:0 auto 1rem auto;
 	width: 80%;
+	max-width: 30rem;
 }
 
 #now-playing a{
@@ -520,6 +542,11 @@ footer nav ul li{
 @media only screen and (min-width: 43em) {
 
 	
+	html{
+		font-size: 110%;
+		line-height: 1.3rem;
+	}
+
 	 #seven-wonders li{
 		width: 44%;
 		display: inline-block;
@@ -552,9 +579,86 @@ footer nav ul li{
 /* 900 px */
 @media only screen and (min-width: 55em){
 	#seven-wonders li{
-		width: 29%;
+		width: 28%;
+	}
+
+	html{
+		font-size: 120%;
+		line-height: 1.5;
+	}
+
+	h2{
+		line-height: 4rem;	
+	}
+
+	#now-playing img{
+		margin: 0 auto;
 	}
 
 
+	#seven-wonders ol li:last-child{
+		width: 40em;
+		padding-right: 2.5rem;
+		margin: 0 auto;
+	}
+
 }
 
+
+
+@media print{
+
+
+	html{
+		color: black;
+	}
+
+	nav{
+		display: none;
+	}
+
+
+	div{
+		border: none;
+	}
+	.banner{
+		display: none;
+	}
+
+	 #seven-wonders li{
+		width: 40%;
+		display: inline-block;
+		margin: 1rem;
+	}
+
+	img{
+		display: none;
+	}
+
+	h2, h3{
+		text-align: left;
+	}
+
+	.atlantis-text{
+		position: static;
+	}
+
+/*  spaces are critical */
+	#seven-wonders a::after {
+		content: " (" attr(href) ")";
+	}
+
+	.button{
+		width: 25%;
+		display: inline-block;
+	}
+
+
+#this-week{
+
+	border-top: 0;
+	border-bottom: 0;
+	
+}
+
+}
