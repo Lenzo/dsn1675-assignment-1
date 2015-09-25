@@ -170,7 +170,7 @@ strong{
 
 #seven-wonders {
 	padding: 1rem;
-	background-color: smokewhite;
+	background-color: #99ffcc;
 	border-bottom: 3rem solid seagreen;
 }
 
@@ -289,36 +289,33 @@ dd{
 #now-playing{
 	border-top: 3rem solid seagreen;
 	border-bottom: 3rem solid seagreen;
-	background-color: smokewhite;
+	background-color: #99ffcc;
 	overflow: hidden;
-	position: relative;
+	
+
 }
 
 #now-playing img{
 	margin-bottom: 1rem;
 }
 
+#now-playing h2{
+	margin-left: 1rem;
+}
 
-/*
+
+
 .atlantis-text{
 	text-align: center;
-	color: white;
-	position: absolute;
-	top: 55%;
-	left: 10%;	
-	right: 10%;
 }
 
-
-
-#now-playing h3{
+.atlantis-text .button{
 	color: white;
-	text-shadow: 2px 2px 6px #555;
-	line-height: 1rem;
-	font-size: .7rem;
-}
+	text-align: center;
+	width: 75%;
+	margin: 0 auto 1rem auto;
 
-*/
+}
 
 .atlantis-text p{
 	color: seagreen;
@@ -347,7 +344,7 @@ dd{
 /*----------------------- THIS WEEK BEGINS ---------------------------- */
 
 #this-week{
-	background-color: smokewhite;
+	background-color: #ccffff;
 	border-top: 3rem solid powderblue;
 	border-bottom: 3rem solid powderblue;
 	padding: 1rem;
@@ -465,6 +462,58 @@ footer nav ul li{
 		margin-right: auto;
 	}
 
+	#buy-tickets a p{
+		width: 40%;
+		margin: .5rem;
+
+	}
+
+
+	#now-playing{
+		position: relative;
+	}
+
+	.atlantis-text{
+		text-align: center;
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 10%;	
+		right: 10%;
+	}
+
+	#now-playing h3{
+		font-size: 1.7rem;
+		line-height: 1.7rem;
+		color: white;
+		text-shadow: 2px 2px 6px #555;
+
+	}
+
+	#now-playing h3 i{
+		font-size: 4rem;
+	}
+
+	.atlantis-text p{
+		color: white;
+		font-weight: 700;
+	}
+
+
+	#this-week ol li{
+		width: 75%;
+		max-width: 25rem;
+		text-align: left;
+		margin: 1rem auto 1rem auto;
+	
+	}
+
+	#this-week h3{
+		text-align: left;
+	}
+
+}
+
 
 /* 700 px */
 
@@ -486,4 +535,26 @@ footer nav ul li{
 		font-size: .9rem;
 	}
 
+	#this-week ol li{
+		max-width: 75%;
+		text-align: left;
+		margin: 1rem auto 1rem auto;
+	
+	}
+
+	footer nav ul li{
+		display: inline-block;
+	}
+
 }
+
+
+/* 900 px */
+@media only screen and (min-width: 55em){
+	#seven-wonders li{
+		width: 29%;
+	}
+
+
+}
+
